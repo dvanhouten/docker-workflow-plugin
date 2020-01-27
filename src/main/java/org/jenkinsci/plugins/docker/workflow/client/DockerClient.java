@@ -74,7 +74,7 @@ public class DockerClient {
      */
     @SuppressFBWarnings(value="MS_SHOULD_BE_FINAL", justification="mutable for scripts")
     @Restricted(NoExternalUse.class)
-    public static int CLIENT_TIMEOUT = Integer.getInteger(DockerClient.class.getName() + ".CLIENT_TIMEOUT", 180); // TODO 2.4+ SystemProperties
+    public static int CLIENT_TIMEOUT = Integer.getInteger(DockerClient.class.getName() + ".CLIENT_TIMEOUT", 600); // TODO 2.4+ SystemProperties
 
     // e.g. 2015-04-09T13:40:21.981801679Z
     public static final String DOCKER_DATE_TIME_FORMAT = "yyyy-MM-dd'T'HH:mm:ss";
